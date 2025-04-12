@@ -4,28 +4,38 @@
 
 Dashboard para gestão de investimentos em ações, dólar, bitcoin e renda fixa, com visualização de gráficos e totais consolidados.
 
+---
+
+## 📋 Descrição do Projeto
+Sistema completo para monitoramento de investimentos, contendo:
+- **Ações e FIIs**: Registro de transações e cálculo de rentabilidade
+- **Dólar e Bitcoin**: Acompanhamento de cotações em tempo real
+- **Dashboard Unificado**: Visualização gráfica da distribuição da carteira
+- **API RESTful**: Integração com serviços externos para cotações
+
+---
+
+## 🛠️ Pré-requisitos
+- Docker versão 20.10+ 
+- Docker Compose versão 2.12+
+
+
+---
+
 ## 🚀 Instalação via Docker
 
-1. **Pré-requisitos**:
-   - Docker e Docker Compose instalados
+### 1. Clone os repositórios
+```bash
+git clone https://github.com/jarbascotia/frontend.git
+git clone https://github.com/jarbascotia/acoes.git
+git clone https://github.com/jarbascotia/dolar.git
+git clone https://github.com/jarbascotia/bitcoin.git
 
-2. **Clone o repositório**:
-   ```bash
-   git clone [URL_DO_REPOSITORIO]
 
 
-3. **Execute o projeto**:
+---
 
+##  Execute o projeto
+
+cd frontend
 docker-compose up --build
-
-4. **Acesse**:
-
-Frontend: http://localhost:3000
-
-APIs:
-
-Ações: http://localhost:3003
-
-Dólar: http://localhost:3004
-
-Bitcoin: http://localhost:3005
